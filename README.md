@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Staff Training Automation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A staff onboarding and training system designed for a busy supermarket environment, combining a web-based staff manual with **n8n** and **WhatsApp** automation.
 
-## Available Scripts
+## Background
 
-In the project directory, you can run:
+Working on the shop floor has taught me that some of the most persistent operational challenges often come down to surprisingly small things.
 
-### `npm start`
+The supermarket where I work is located near a university, and many employees are international students. Staff turnover is naturally high: some return to their home countries when their visas or studies come to an end, while others move on to full-time jobs after graduation.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## The Problem
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+High staff turnover means that new employees need to be recruited and trained regularly.
 
-### `npm test`
+However, in a busy supermarket, it is difficult to have an experienced employee accompany every new starter and walk them through each task step by step.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This creates several problems:
 
-### `npm run build`
+* Repetitive training takes time away from experienced staff.
+* The quality of training can vary depending on who provides it.
+* New employees may need to repeatedly ask about small procedures they have forgotten.
+* Important operational knowledge is often passed on verbally rather than documented.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Proposed Solution
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The idea is to make staff training more **self-service, consistent, and accessible**.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The system consists of:
 
-### `npm run eject`
+* 📖 **Web-based Staff Manual**
+  Step-by-step instructions for common tasks and procedures.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* 💬 **WhatsApp Integration**
+  Gives staff easy access to training materials through a platform they already use.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* ⚙️ **n8n Automation**
+  Automates parts of the onboarding and training process, such as delivering training materials and guiding new employees through them.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Goal
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The goal is not to completely replace person-to-person training.
 
-## Learn More
+Instead, the system aims to reduce the amount of repetitive instruction required from experienced staff, while giving new employees a reliable resource they can refer back to whenever they need it.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> **Can we spend less time repeatedly teaching the same procedures, while making staff training more consistent?**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is an attempt to answer that question.
