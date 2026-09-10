@@ -13,6 +13,7 @@ import {
   ChevronDown,
   ChevronLeft,
   ChevronRight,
+  Moon
 } from "lucide-react";
 import { AccordionItem, Carousel } from "../components"
 import { KEYS, ACCENT, ACCENT_SOFT, LIT, LIT_SOFT, LCD_BG, LCD_TEXT } from "../constants/constants";
@@ -47,6 +48,42 @@ export const TOPICS = [
       { hi: "Total", msg: "Contactless for smaller amounts, chip & PIN above the limit", img: imageBaseUrl + "/cash_payment/t_scanned_after_total_scr.jpg" },
       { hi: "Total", msg: "Contactless for smaller amounts, chip & PIN above the limit", img: imageBaseUrl + "/common/t_scanned_after_total_scr2.jpg" },
       { hi: "Total", msg: "Contactless for smaller amounts, chip & PIN above the limit", img: imageBaseUrl + "/cash_payment/til_after_cash_payment_scr.jpg" },
+    ]
+  },
+  {
+    icon: Moon, title: "How to close the till at night", slides: [
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night_bg1.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/t_idle_scr.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/t_menu1_scr.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/t_menu2_scr.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/t_resportx_pressed_scr.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/mac_default_scr.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/mac_menu1_report_scr.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/mac_menu2_scr.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/mac_menu2_report_scr.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/mac_pw_scr.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/mac_z_total_scr.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/mac_z_total_end_scr.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/mac_menu2_banking_scr.jpg" },
+      { hi: "Total", msg: "Contactless for smaller amounts, chip & PIN above the limit", img: imageBaseUrl + "/docs/closing_night_bg2.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_2_1.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_2_2.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_2_3.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_2_4.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_2_5.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_2_6.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_2_7.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_2_8.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_2_9.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_2_10.jpg" },
+      { hi: "Total", msg: "Contactless for smaller amounts, chip & PIN above the limit", img: imageBaseUrl + "/docs/closing_night_bg3.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_3_1.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_3_2.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_3_3.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_3_4.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_3_5.jpg" },
+
+      
     ]
   },
   // {
