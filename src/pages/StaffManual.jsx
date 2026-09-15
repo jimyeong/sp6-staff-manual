@@ -271,7 +271,6 @@ export default function StaffManual() {
         <div className="sm-notice">
           👋Tap a topic to see step-by-step instructions
         </div>
-        <Footer />
 
         <div className="sm-list">
           {TOPICS.map((topic, i) => (
@@ -283,6 +282,8 @@ export default function StaffManual() {
             />
           ))}
         </div>
+        <Footer />
+
         
       </div>
     </div>
