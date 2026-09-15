@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import { AccordionItem, Carousel } from "../components"
 import { KEYS, ACCENT, ACCENT_SOFT, LIT, LIT_SOFT, LCD_BG, LCD_TEXT } from "../constants/constants";
+import Footer from "../components/Footer"
 
 const imageBaseUrl = process.env.REACT_APP_IMAGE_BASE_URL
 console.log("@", imageBaseUrl)
@@ -30,7 +31,7 @@ export const TOPICS = [
   //   ]
   // },
   {
-    icon: CreditCard, title: "How to take a card payment", slides: [
+    icon: CreditCard, title: "Payment:Card", slides: [
       { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/common/t_idle_scr.jpg" },
       { hi: "Total", msg: "Contactless for smaller amounts, chip & PIN above the limit", img: imageBaseUrl + "/common/t_scanned_before_total_scr.jpg" },
       { hi: "Total", msg: "Contactless for smaller amounts, chip & PIN above the limit", img: imageBaseUrl + "/common/t_scanned_after_total_scr.jpg" },
@@ -42,7 +43,7 @@ export const TOPICS = [
     ]
   },
   {
-    icon: CreditCard, title: "How to take a cash payment", slides: [
+    icon: Banknote, title: "Payment:Cash", slides: [
       { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/common/t_idle_scr.jpg" },
       { hi: "Total", msg: "Contactless for smaller amounts, chip & PIN above the limit", img: imageBaseUrl + "/common/t_scanned_before_total_scr.jpg" },
       { hi: "Total", msg: "Contactless for smaller amounts, chip & PIN above the limit", img: imageBaseUrl + "/cash_payment/t_scanned_after_total_scr.jpg" },
@@ -51,7 +52,39 @@ export const TOPICS = [
     ]
   },
   {
-    icon: Moon, title: "How to close the till at night", slides: [
+    icon: CreditCard, title: "Refund: Card", slides: [
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/refund/refund0.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/refund/refund0_1.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/refund/refund1.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/refund/refund2.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/refund/refund3.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/refund/refund4.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/refund/refund5.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/refund/refund_mac1.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/refund/refund_mac2.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/refund/refund_mac3.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/refund/refund_mac4.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/refund/refund6.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/refund/refund7.jpg" },
+    ]
+  },
+  {
+    icon: Banknote, title: "Refund: Cash", slides: [
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/refund/refund0.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/refund/refund0_1.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/refund/refund1.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/refund/refund2.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/refund/refund3.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/refund/refund4.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/refund/refund5.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/refund/refund5_cash1.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/refund/refund5_cash2.jpg" },
+      
+      
+    ]
+  },
+  {
+    icon: Moon, title: "Closing: Night", slides: [
       { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night_bg1.jpg" },
       { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/t_idle_scr.jpg" },
       { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/t_menu1_scr.jpg" },
@@ -62,6 +95,7 @@ export const TOPICS = [
       { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/mac_menu2_scr.jpg" },
       { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/mac_menu2_report_scr.jpg" },
       { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/mac_pw_scr.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/mac_z_total_end_scr0.jpg" },
       { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/mac_z_total_scr.jpg" },
       { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/mac_z_total_end_scr.jpg" },
       { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/mac_menu2_banking_scr.jpg" },
@@ -72,6 +106,7 @@ export const TOPICS = [
       { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_2_4.jpg" },
       { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_2_5.jpg" },
       { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_2_6.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_2_6_1.jpg" },
       { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_2_7.jpg" },
       { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_2_8.jpg" },
       { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_2_9.jpg" },
@@ -82,8 +117,8 @@ export const TOPICS = [
       { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_3_3.jpg" },
       { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_3_4.jpg" },
       { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/closing_night_3_5.jpg" },
-
-      
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/final_1.jpg" },
+      { hi: "Total", msg: "Press Total — the card machine wakes up automatically", img: imageBaseUrl + "/docs/closing_night/final_2.jpg" },
     ]
   },
   // {
@@ -168,7 +203,7 @@ const CSS = `
 .sm-wrap { max-width: 640px; margin: 0 auto; padding: 40px 18px 70px; }
 .sm-h1 { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; margin: 0; }
 .sm-sub { color: #6B7280; font-size: 15.5px; margin: 4px 0 0; }
-.sm-notice { background: ${ACCENT_SOFT}; border: 1px solid #CFE0F0; color: ${ACCENT}; font-size: 13.5px; border-radius: 8px; padding: 10px 14px; margin: 22px 0 26px; }
+.sm-notice { background: ${ACCENT_SOFT}; border: 1px solid #CFE0F0; color: ${ACCENT}; font-size: 16px; border-radius: 8px; padding: 10px 14px; margin: 22px 0 26px; }
 .sm-list { display: flex; flex-direction: column; gap: 10px; }
 .sm-item { background: #FFFFFF; border-radius: 14px; box-shadow: 0 2px 14px rgba(20,30,40,0.07); overflow: hidden; }
 .sm-header { width: 100%; display: flex; align-items: center; gap: 14px; padding: 16px; background: none; border: none; cursor: pointer; text-align: left; font: inherit; color: inherit; }
@@ -198,6 +233,24 @@ const CSS = `
 .sm-dot { height: 6px; border-radius: 3px; border: none; cursor: pointer; padding: 0; background: #E7E5DE; }
 .sm-footer { text-align: center; color: #6B7280; font-size: 13px; margin-top: 36px; }
 .sm-arrow:focus-visible { outline: 2px solid #1B2430; outline-offset: 2px; }
+.sm-footer p { margin: 0; }
+.sm-footer-meta { margin-top: 6px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0 8px; font-size: 12.5px; color: #9CA3AF; }
+.sm-footer-link { display: inline-flex; align-items: center; min-height: 44px; padding: 0 4px; background: none; border: none; font: inherit; font-weight: 600; color: ${ACCENT}; cursor: pointer; }
+.sm-footer-link:hover { text-decoration: underline; }
+.sm-footer-link:focus-visible { outline: 2px solid ${ACCENT}; outline-offset: 2px; border-radius: 4px; }
+.sm-footer p { margin: 0; }
+.sm-footer-meta { margin-top: 6px; font-size: 12.5px; color: #9CA3AF; }
+.sm-footer { margin-top: 28px; }
+.sm-footer p { margin: 0; }
+.sm-contact { display: flex; gap: 14px; align-items: flex-start; background: #FFFFFF; border-radius: 14px; border-left: 5px solid #25D366; box-shadow: 0 2px 14px rgba(20,30,40,0.07); padding: 18px 18px 18px 16px; text-align: left; }
+.sm-contact-icon { flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%; background: #E3F8EA; color: #128C4B; display: flex; align-items: center; justify-content: center; }
+.sm-contact-body { flex: 1; min-width: 0; }
+.sm-contact-title { font-size: 17px; font-weight: 800; letter-spacing: -0.01em; color: #1B2430; }
+.sm-contact-text { margin-top: 4px !important; font-size: 15px; line-height: 1.45; color: #374151; }
+.sm-contact-text strong { color: #128C4B; }
+.sm-contact-hint { margin-top: 10px !important; font-size: 12.5px; color: #6B7280; }
+.sm-contact-hint span { display: inline-block; margin-top: 2px; padding: 2px 8px; border-radius: 6px; background: ${LCD_BG}; color: ${LCD_TEXT}; font-family: "SFMono-Regular", Consolas, "Courier New", monospace; font-size: 11.5px; }
+.sm-footer-note { margin-top: 18px !important; text-align: center; color: #9CA3AF; font-size: 13px; }
 `;
 
 
@@ -211,13 +264,14 @@ export default function StaffManual() {
       <style>{CSS}</style>
       <div className="sm-wrap">
         <header>
-          <h1 className="sm-h1">Staff Manual</h1>
-          <p className="sm-sub">Tap a topic to see step-by-step instructions</p>
+          <h1 className="sm-h1">SP6 Staff Manual</h1>
+          {/* <p className="sm-sub"></p> */}
         </header>
 
         <div className="sm-notice">
-          Photos below are placeholders — swap in real till screenshots whenever you get a chance.
+          👋Tap a topic to see step-by-step instructions
         </div>
+        <Footer />
 
         <div className="sm-list">
           {TOPICS.map((topic, i) => (
@@ -229,8 +283,7 @@ export default function StaffManual() {
             />
           ))}
         </div>
-
-        <footer className="sm-footer">Ask anytime — everyone started somewhere.</footer>
+        
       </div>
     </div>
   );
