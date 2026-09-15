@@ -16,9 +16,9 @@ export default function Footer() {
             Message <strong>Jimmy</strong> on WhatsApp — questions, fixes, and
             ideas for new guides are all welcome.
           </p>
-          <p className="sm-contact-hint">
+          {/* <p className="sm-contact-hint">
             Tip: mention the topic and step, e.g. <span>Refund: Card · 11/11</span>
-          </p>
+          </p> */}
         </div>
       </div>
       <p className="sm-footer-note">Ask anytime — everyone started somewhere.</p>
