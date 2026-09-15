@@ -115,7 +115,7 @@ export const TOPICS = [
       { hi: "Total", msg: "Find Card Total, Cash, Total and write the number on the right document in matching sections", img: imageBaseUrl + "/docs/closing_night/closing_night_3_4.jpg" },
       { hi: "Total", msg: "Find Card Total, Cash, Total and write the number on the right document in matching sections", img: imageBaseUrl + "/docs/closing_night/closing_night_3_5.jpg" },
       { hi: "Total", msg: "Collect those documents and staple them together in the following order. z-total->top, declaration -> bottom", img: imageBaseUrl + "/docs/closing_night/final_1.jpg" },
-      { hi: "Total", msg: "Put those documents(the collection of documents, and all receipts of the day) in the envelope", img: imageBaseUrl + "/docs/closing_night/final_2.jpg" },
+      { hi: "Total", msg: "Put those documents(the collection of documents, and all receipts of the day) in the envelope", img: imageBaseUrl + "/docs/closing_night/final_2.jpg?v=2" },
     ]
   },
   // {
