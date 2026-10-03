@@ -66,6 +66,11 @@ export const TOPICS = [
       { hi: "Total", msg: "See the document printed and find refund code at the buttom", img: imageBaseUrl + "/refund/refund_mac4.jpg" },
       { hi: "Total", msg: "Press the Credit Card Button", img: imageBaseUrl + "/refund/refund6.jpg" },
       { hi: "Total", msg: "Enter any number, the number does not matter", img: imageBaseUrl + "/refund/refund7.jpg" },
+      { hi: "Total", msg: "Enter any number, the number does not matter", img: imageBaseUrl + "/refund/refund1_1.jpg" },
+      { hi: "Total", msg: "Enter any number, the number does not matter", img: imageBaseUrl + "/refund/refund1_2.jpg" },
+      { hi: "Total", msg: "Enter any number, the number does not matter", img: imageBaseUrl + "/refund/refund1_3.jpg" },
+      { hi: "Total", msg: "Enter any number, the number does not matter", img: imageBaseUrl + "/refund/refund1_4.jpg" },
+      { hi: "Total", msg: "Enter any number, the number does not matter", img: imageBaseUrl + "/refund/refund1_5.jpg" },
     ]
   },
   {
