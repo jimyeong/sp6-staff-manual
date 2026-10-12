@@ -26,9 +26,9 @@ export default function AppBanner() {
         </div>
         <div>
           <p className="sm-app-title">Owlverload Application</p>
-          <p className="sm-app-text">Our stock-check app — install it on your phone.</p>
+          <p className="sm-app-text">Our stock-check app</p>
           <p className="sm-app-note">
-            Send your Gmail address to Jimmy (night shift) — once you're added,
+            If interested, send your Gmail address to Jimmy (night shift) — once you're added,
             this link will open the app.
           </p>
         </div>
