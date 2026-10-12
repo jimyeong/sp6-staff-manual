@@ -311,9 +311,6 @@ export default function StaffManual() {
           {/* <p className="sm-sub"></p> */}
         </header>
 
-        <div className="sm-notice">
-          👋Tap a topic to see step-by-step instructions
-        </div>
 
         <div className="sm-list">
           {TOPICS.map((topic, i) => (
