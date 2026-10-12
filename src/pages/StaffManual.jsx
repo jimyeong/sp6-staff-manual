@@ -66,11 +66,11 @@ export const TOPICS = [
       { hi: "Total", msg: "See the document printed and find refund code at the buttom", img: imageBaseUrl + "/refund/refund_mac4.jpg" },
       { hi: "Total", msg: "Press the Credit Card Button", img: imageBaseUrl + "/refund/refund6.jpg" },
       { hi: "Total", msg: "Enter any number, the number does not matter", img: imageBaseUrl + "/refund/refund7.jpg" },
-      { hi: "Total", msg: "Enter any number, the number does not matter", img: imageBaseUrl + "/refund/refund1_1.jpg" },
-      { hi: "Total", msg: "Enter any number, the number does not matter", img: imageBaseUrl + "/refund/refund1_2.jpg" },
-      { hi: "Total", msg: "Enter any number, the number does not matter", img: imageBaseUrl + "/refund/refund1_3.jpg" },
-      { hi: "Total", msg: "Enter any number, the number does not matter", img: imageBaseUrl + "/refund/refund1_4.jpg" },
-      { hi: "Total", msg: "Enter any number, the number does not matter", img: imageBaseUrl + "/refund/refund1_5.jpg" },
+      { hi: "Total", msg: "Once you've finished your transaction on the screen, you will get two receipts(a refund receipt and a form for customer detail). hand the form to customer and ask to fill in", img: imageBaseUrl + "/refund/refund1_1.jpg" },
+      { hi: "Total", msg: "Find the refund receipt and original receipt and then, print out so we can have 2pairs of them(2pairs of original and refund receipt) -> a pair for us and the other pair for the customer", img: imageBaseUrl + "/refund/refund1_2.jpg" },
+      { hi: "Total", msg: "Also find this receipt from the card machine, once the refund request from the machine gets accepted, it will be printed out", img: imageBaseUrl + "/refund/refund1_3.jpg" },
+      { hi: "Total", msg: "Find original receipt", img: imageBaseUrl + "/refund/refund1_4.jpg" },
+      { hi: "Total", msg: "Staple them together as following order(a receipt from the card machine, the form for detail, a pair of original and refund receipt)", img: imageBaseUrl + "/refund/refund1_5.jpg" },
     ]
   },
   {
@@ -83,6 +83,10 @@ export const TOPICS = [
       { hi: "Total", msg: "Press Total", img: imageBaseUrl + "/refund/refund4.jpg" },
       { hi: "Total", msg: "Enter the amount of money received from the customer and press the cash button", img: imageBaseUrl + "/refund/refund5_cash1.jpg" },
       { hi: "Total", msg: "Hand over the cash amount shown on the screen", img: imageBaseUrl + "/refund/refund5_cash2.jpg" },
+      { hi: "Total", msg: "Enter any number, the number does not matter", img: imageBaseUrl + "/refund/refund1_1.jpg" },
+      { hi: "Total", msg: "Enter any number, the number does not matter", img: imageBaseUrl + "/refund/refund1_2.jpg" },
+      { hi: "Total", msg: "Enter any number, the number does not matter", img: imageBaseUrl + "/refund/refund1_4.jpg" },
+      { hi: "Total", msg: "Enter any number, the number does not matter", img: imageBaseUrl + "/refund/refund1_5_1.jpg" },
     ]
   },
   {
