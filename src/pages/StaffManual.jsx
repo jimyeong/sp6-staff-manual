@@ -18,9 +18,10 @@ import {
 import { AccordionItem, Carousel } from "../components"
 import { KEYS, ACCENT, ACCENT_SOFT, LIT, LIT_SOFT, LCD_BG, LCD_TEXT } from "../constants/constants";
 import Footer from "../components/Footer"
+import AppBanner from "../components/AppBanner/AppBanner";
 
 const imageBaseUrl = process.env.REACT_APP_IMAGE_BASE_URL
-console.log("@", imageBaseUrl)
+export const appLogo = imageBaseUrl + "/logo1.png"
 export const TOPICS = [
   // {
   //   icon: IdCard, title: "How to apply membership card", slides: [
@@ -257,6 +258,23 @@ const CSS = `
 .sm-contact-hint { margin-top: 10px !important; font-size: 12.5px; color: #6B7280; }
 .sm-contact-hint span { display: inline-block; margin-top: 2px; padding: 2px 8px; border-radius: 6px; background: ${LCD_BG}; color: ${LCD_TEXT}; font-family: "SFMono-Regular", Consolas, "Courier New", monospace; font-size: 11.5px; }
 .sm-footer-note { margin-top: 18px !important; text-align: center; color: #9CA3AF; font-size: 13px; }
+
+
+
+.sm-app { margin-top: 14px; background: #FFFFFF; border-radius: 14px; box-shadow: 0 2px 14px rgba(20,30,40,0.07); padding: 18px; text-align: left; }
+.sm-app-top { display: flex; gap: 14px; align-items: flex-start; }
+.sm-app-icon { flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%; background: ${ACCENT_SOFT}; color: ${ACCENT}; display: flex; align-items: center; justify-content: center; }
+.sm-app-title { font-size: 16.5px; font-weight: 800; color: #1B2430; }
+.sm-app-text { margin-top: 2px !important; font-size: 14px; line-height: 1.45; color: #6B7280; }
+.sm-app-links { display: flex; gap: 10px; margin-top: 14px; }
+.sm-store { flex: 1; min-height: 52px; display: flex; flex-direction: column; justify-content: center; padding: 8px 14px; border-radius: 10px; background: #1B2430; color: #FFFFFF; text-decoration: none; }
+.sm-store-sub { font-size: 11px; opacity: 0.7; line-height: 1.2; }
+.sm-store-main { font-size: 15px; font-weight: 700; line-height: 1.25; }
+.sm-store:active { opacity: 0.85; }
+.sm-store:focus-visible { outline: 2px solid ${ACCENT}; outline-offset: 2px; }
+.sm-app-note { margin-top: 12px !important; background: #FFF8E6; border: 1px solid #F3E2B3; border-radius: 10px; padding: 10px 12px; font-size: 13.5px; line-height: 1.5; color: #7A5A12; }
+.sm-app-note strong { color: #6B4A08; }
+.sm-app-logo { flex-shrink: 0; width: 44px; height: 44px; border-radius: 10px; object-fit: cover; background: #FFFFFF; box-shadow: 0 0 0 1px rgba(20,30,40,0.08); display: block; }
 `;
 
 
@@ -288,9 +306,9 @@ export default function StaffManual() {
             />
           ))}
         </div>
-        <Footer />
-
         
+        <AppBanner />
+        <Footer />
       </div>
     </div>
   );
