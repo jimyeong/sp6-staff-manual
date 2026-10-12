@@ -19,7 +19,10 @@ import { AccordionItem, Carousel } from "../components"
 import { KEYS, ACCENT, ACCENT_SOFT, LIT, LIT_SOFT, LCD_BG, LCD_TEXT } from "../constants/constants";
 import Footer from "../components/Footer"
 import AppBanner from "../components/AppBanner/AppBanner";
-
+const BRAND = "#1B3A9C";
+const BRAND_DARK = "#142D7A";
+const BRAND_SOFT = "#E8EDFA";
+const BRAND_ACCENT = "#08021d";
 const imageBaseUrl = process.env.REACT_APP_IMAGE_BASE_URL
 export const appLogo = imageBaseUrl + "/logo1.png"
 export const TOPICS = [
@@ -206,8 +209,10 @@ export const TOPICS = [
 
 // All static layout lives here as real CSS — no Tailwind, no build step required.
 const CSS = `
-.sm-root { background: #F6F5F1; min-height: 100%; width: 100%; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #1B2430; }
-.sm-wrap { max-width: 640px; margin: 0 auto; padding: 40px 18px 70px; }
+
+.sm-root { background: #EFEDE7; min-height: 100%; width: 100%; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #1B2430; }
+
+.sm-wrap { max-width: 640px; margin: 0 auto; padding: 40px 18px 70px; background: #F6F5F1; box-shadow: 0 0 28px rgba(20,30,40,0.09); }
 .sm-h1 { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; margin: 0; }
 .sm-sub { color: #6B7280; font-size: 15.5px; margin: 4px 0 0; }
 .sm-notice { background: ${ACCENT_SOFT}; border: 1px solid #CFE0F0; color: ${ACCENT}; font-size: 16px; border-radius: 8px; padding: 10px 14px; margin: 22px 0 26px; }
@@ -261,6 +266,7 @@ const CSS = `
 
 
 
+
 .sm-app { margin-top: 14px; background: #FFFFFF; border-radius: 14px; box-shadow: 0 2px 14px rgba(20,30,40,0.07); padding: 18px; text-align: left; }
 .sm-app-top { display: flex; gap: 14px; align-items: flex-start; }
 .sm-app-icon { flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%; background: ${ACCENT_SOFT}; color: ${ACCENT}; display: flex; align-items: center; justify-content: center; }
@@ -275,6 +281,13 @@ const CSS = `
 .sm-app-note { margin-top: 12px !important; background: #FFF8E6; border: 1px solid #F3E2B3; border-radius: 10px; padding: 10px 12px; font-size: 13.5px; line-height: 1.5; color: #7A5A12; }
 .sm-app-note strong { color: #6B4A08; }
 .sm-app-logo { flex-shrink: 0; width: 44px; height: 44px; border-radius: 10px; object-fit: cover; background: #FFFFFF; box-shadow: 0 0 0 1px rgba(20,30,40,0.08); display: block; }
+
+
+.sm-band { background: linear-gradient(135deg, ${BRAND} 0%, ${BRAND_DARK} 100%); border-bottom: 4px solid ${BRAND_ACCENT}; margin: -40px -18px 26px; padding: 30px 18px 26px; }
+.sm-band-inner { max-width: 604px; margin: 0 auto; }
+.sm-h1 { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; margin: 0; color: #FFFFFF; }
+.sm-sub { color: rgba(255,255,255,0.82); font-size: 15.5px; margin: 4px 0 0; }
+
 `;
 
 
@@ -288,7 +301,13 @@ export default function StaffManual() {
       <style>{CSS}</style>
       <div className="sm-wrap">
         <header>
-          <h1 className="sm-h1">SP6 Staff Manual</h1>
+          <div className="sm-band">
+            <div className="sm-band-inner">
+              <h1 className="sm-h1">SP6 Staff Manual</h1>
+              <p className="sm-sub">Tap a topic to see step-by-step instructions</p>
+            </div>
+          </div>
+          
           {/* <p className="sm-sub"></p> */}
         </header>
 
@@ -306,7 +325,7 @@ export default function StaffManual() {
             />
           ))}
         </div>
-        
+
         <AppBanner />
         <Footer />
       </div>
