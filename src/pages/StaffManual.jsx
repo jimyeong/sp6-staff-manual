@@ -19,6 +19,7 @@ import { AccordionItem, Carousel } from "../components"
 import { KEYS, ACCENT, ACCENT_SOFT, LIT, LIT_SOFT, LCD_BG, LCD_TEXT } from "../constants/constants";
 import Footer from "../components/Footer"
 import AppBanner from "../components/AppBanner/AppBanner";
+import FeedbackCard from "../components/FeedbackCard/FeedbackCard";
 const BRAND = "#1B3A9C";
 const BRAND_DARK = "#142D7A";
 const BRAND_SOFT = "#E8EDFA";
@@ -288,6 +289,15 @@ const CSS = `
 .sm-h1 { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; margin: 0; color: #FFFFFF; }
 .sm-sub { color: rgba(255,255,255,0.82); font-size: 15.5px; margin: 4px 0 0; }
 
+
+.sm-form { display: flex; align-items: center; gap: 12px; margin-top: 14px; background: #FFFFFF; border-radius: 14px; border-left: 5px solid ${BRAND_ACCENT}; box-shadow: 0 2px 14px rgba(20,30,40,0.07); padding: 18px 18px 18px 16px; text-decoration: none; color: inherit; }
+.sm-form-body { flex: 1; min-width: 0; }
+.sm-form-title { font-size: 16px; font-weight: 800; color: #1B2430; }
+.sm-form-text { margin-top: 3px !important; font-size: 13.5px; color: #6B7280; }
+.sm-form-arrow { flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%; background: ${BRAND_SOFT}; color: ${BRAND}; display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700; }
+.sm-form:active { opacity: 0.9; }
+.sm-form:focus-visible { outline: 2px solid ${BRAND}; outline-offset: 2px; }
+
 `;
 
 
@@ -307,22 +317,26 @@ export default function StaffManual() {
               <p className="sm-sub">Tap a topic to see step-by-step instructions</p>
             </div>
           </div>
-          
           {/* <p className="sm-sub"></p> */}
         </header>
+        <FeedbackCard />
+        <br />
+        
 
 
         <div className="sm-list">
           {TOPICS.map((topic, i) => (
-            <AccordionItem
-              key={topic.title}
-              topic={topic}
-              isOpen={openIndex === i}
-              onToggle={() => setOpenIndex(openIndex === i ? -1 : i)}
-            />
+            <>
+              <AccordionItem
+                key={topic.title}
+                topic={topic}
+                isOpen={openIndex === i}
+                onToggle={() => setOpenIndex(openIndex === i ? -1 : i)}
+              />
+            </>
           ))}
         </div>
-
+        <br />
         <AppBanner />
         <Footer />
       </div>

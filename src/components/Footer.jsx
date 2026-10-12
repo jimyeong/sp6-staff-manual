@@ -1,4 +1,5 @@
 
+import FeedbackCard from "./FeedbackCard/FeedbackCard";
 export default function Footer() {
   return (
     <footer className="sm-footer">
@@ -19,6 +20,8 @@ export default function Footer() {
           {/* <p className="sm-contact-hint">
             Tip: mention the topic and step, e.g. <span>Refund: Card · 11/11</span>
           </p> */}
+
+
         </div>
       </div>
       <p className="sm-footer-note">Ask anytime — everyone started somewhere.</p>
