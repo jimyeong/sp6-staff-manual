@@ -95,7 +95,7 @@ export const TOPICS = [
     ]
   },
   {
-    icon: Moon, title: "Closing: Night", slides: [
+    icon: Moon, title: "Night Closing", slides: [
       { hi: "Total", msg: "Step1", img: imageBaseUrl + "/docs/closing_night_bg1.jpg" },
       { hi: "Total", msg: "Press Menu Button", img: imageBaseUrl + "/docs/closing_night/t_idle_scr.jpg" },
       { hi: "Total", msg: "Press Reports Button", img: imageBaseUrl + "/docs/closing_night/t_menu1_scr.jpg" },
@@ -130,6 +130,13 @@ export const TOPICS = [
       { hi: "Total", msg: "Find Card Total, Cash, Total and write the number on the right document in matching sections", img: imageBaseUrl + "/docs/closing_night/closing_night_3_5.jpg" },
       { hi: "Total", msg: "Collect those documents and staple them together in the following order. z-total->top, declaration -> bottom", img: imageBaseUrl + "/docs/closing_night/final_1.jpg" },
       { hi: "Total", msg: "Put those documents(the collection of documents, and all receipts of the day) in the envelope", img: imageBaseUrl + "/docs/closing_night/final_2.jpg?v=2" },
+    ]
+  },
+  {
+    icon: Moon, title: "Night Closing: Card Payment Discrepancies", slides: [
+      { hi: "Total", msg: "How to deal with the situation if there is cash difference.", img: imageBaseUrl + "/docs/cash_difference_bg.jpg" },
+      { hi: "Total", msg: "1: Find the amount of missing money. 2: add the amount on cash total on X-report. 3: refer to the explanation in the picture", img: imageBaseUrl + "/docs/cash_difference1.jpg" },
+      { hi: "Total", msg: "Fill up the document based on the principle shown in the picture", img: imageBaseUrl + "/docs/cash_difference2.jpg" },
     ]
   },
   // {
