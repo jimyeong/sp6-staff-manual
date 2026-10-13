@@ -91,7 +91,7 @@ export const TOPICS = [
       { hi: "Total", msg: "Once you've finished your transaction on the screen, you will get two receipts(a refund receipt and a form for customer detail). hand the form to customer and ask to fill in", img: imageBaseUrl + "/refund/refund1_1.jpg" },
       { hi: "Total", msg: "Find the refund receipt and original receipt and then, print out so we can have 2pairs of them(2pairs of original and refund receipt) -> a pair for us and the other pair for the customer", img: imageBaseUrl + "/refund/refund1_2.jpg" },
       { hi: "Total", msg: "Find original receipt", img: imageBaseUrl + "/refund/refund1_4.jpg" },
-      { hi: "Total", msg: "Staple them together as following order(a receipt from the card machine, the form for detail, a pair of original and refund receipt)", img: imageBaseUrl + "/refund/refund1_5_1.jpg" },
+      { hi: "Total", msg: "Staple them together as following order(the form for detail, a pair of original and refund receipt)", img: imageBaseUrl + "/refund/refund1_5_1.jpg" },
     ]
   },
   {
@@ -321,9 +321,6 @@ export default function StaffManual() {
         </header>
         <FeedbackCard />
         <br />
-        
-
-
         <div className="sm-list">
           {TOPICS.map((topic, i) => (
             <>
