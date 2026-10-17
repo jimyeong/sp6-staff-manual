@@ -341,7 +341,7 @@ export default function StaffManual() {
           ))}
         </div>
         <br />
-        <AppBanner />
+        {/* <AppBanner /> */}
         <Footer />
       </div>
     </div>
