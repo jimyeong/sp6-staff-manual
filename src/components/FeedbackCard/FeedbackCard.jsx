@@ -10,7 +10,7 @@ export default function FeedbackCard() {
         <p className="sm-form-title">Found this useful?</p>
         <p className="sm-form-text">Takes 10 seconds · Anonymous — I won't know who wrote it</p>
       </div>
-      <span className="sm-form-arrow" aria-hidden="true">→</span>
+      <span className="sm-form-arrow" aria-hidden="true">👍</span>
     </a>
   );
 }

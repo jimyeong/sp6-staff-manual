@@ -301,9 +301,13 @@ const CSS = `
 .sm-form-body { flex: 1; min-width: 0; }
 .sm-form-title { font-size: 16px; font-weight: 800; color: #1B2430; }
 .sm-form-text { margin-top: 3px !important; font-size: 13.5px; color: #6B7280; }
-.sm-form-arrow { flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%; background: ${BRAND_SOFT}; color: ${BRAND}; display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700; }
+.sm-form-arrow { flex-shrink: 0; width: 50px; height: 50px; border-radius: 50%; background: transparent; color: ${BRAND}; display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700; }
 .sm-form:active { opacity: 0.9; }
 .sm-form:focus-visible { outline: 2px solid ${BRAND}; outline-offset: 2px; }
+
+.sm-form-arrow{
+  font-size: 40px;
+}
 
 `;
 
