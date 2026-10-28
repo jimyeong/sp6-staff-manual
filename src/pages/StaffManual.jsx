@@ -57,7 +57,17 @@ export const TOPICS = [
     ]
   },
   {
-    icon: CreditCard, title: "Refund: Card", slides: [
+    icon: Banknote, title: "Voucher usage", slides: [
+      { hi: "Total", msg: "Start scanning and press the total button", img: imageBaseUrl + "/voucher/t_scanned_before_total_scr.jpg" },
+      { hi: "Total", msg: "Find the voucher button", img: imageBaseUrl + "/voucher/t_scanned_total_pressed_scr.jpg" },
+      { hi: "Total", msg: "Press the voucher button", img: imageBaseUrl + "/voucher/t_voucher_usage_scr.jpg" },
+      { hi: "Total", msg: "Enter the code on the back of the voucher", img: imageBaseUrl + "/voucher/t_voucher_window_scr.jpg" },
+      { hi: "Total", msg: "If a refund certificate is generated, please write the voucher code on it.", img: imageBaseUrl + "/voucher/t_voucher_code.jpg" },
+      
+    ]
+  },
+  {
+    icon: CreditCard, title: "Refund:Card", slides: [
       { hi: "Total", msg: "To find the document, press the Menu button", img: imageBaseUrl + "/refund/refund0.jpg" },
       { hi: "Total", msg: "To load the document, Press the Previous Documents, and Find the case", img: imageBaseUrl + "/refund/refund0_1.jpg" },
       { hi: "Total", msg: "Select the item you want to refund and press Select Item", img: imageBaseUrl + "/refund/refund1.jpg" },
@@ -79,7 +89,7 @@ export const TOPICS = [
     ]
   },
   {
-    icon: Banknote, title: "Refund: Cash", slides: [
+    icon: Banknote, title: "Refund:Cash", slides: [
       { hi: "Total", msg: "To find the document, press the Menu button", img: imageBaseUrl + "/refund/refund0.jpg" },
       { hi: "Total", msg: "To load the document, Press the Previous Documents, and Find the case", img: imageBaseUrl + "/refund/refund0_1.jpg" },
       { hi: "Total", msg: "Select the item you want to refund and press Select Item", img: imageBaseUrl + "/refund/refund1.jpg" },
@@ -133,7 +143,7 @@ export const TOPICS = [
     ]
   },
   {
-    icon: Moon, title: "Night Closing: Card Payment Discrepancies", slides: [
+    icon: Moon, title: "Night Closing:Card Payment Discrepancies", slides: [
       { hi: "Total", msg: "How to deal with the situation if there is cash difference.", img: imageBaseUrl + "/docs/cash_difference_bg.jpg" },
       { hi: "Total", msg: "1: Find the amount of missing money. 2: add the amount on cash total on X-report. 3: refer to the explanation in the picture", img: imageBaseUrl + "/docs/cash_difference1.jpg" },
       { hi: "Total", msg: "Fill up the document based on the principle shown in the picture", img: imageBaseUrl + "/docs/cash_difference2.jpg" },
